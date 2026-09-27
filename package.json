@@ -1,0 +1,59 @@
+{
+  "name": "@Awilum/scope",
+  "version": "1.0.0",
+  "description": "A minimal dependency-free CLI for exploring projects and building structured project context.",
+  "license": "MIT",
+  "author": {
+    "name": "Sergey Romanenko",
+    "email": "awilum@msn.com",
+    "url": "https://github.com/Awilum"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Awilum/scope.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Awilum/scope/issues"
+  },
+  "homepage": "https://github.com/Awilum/scope",
+  "type": "module",
+  "bin": {
+    "scope": "./bin/scope.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE",
+    ".scope.json.example"
+  ],
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "project-context",
+    "codebase",
+    "source-code",
+    "project-explorer",
+    "code-explorer",
+    "context",
+    "unix",
+    "nodejs"
+  ],
+  "scripts": {
+    "check": "node --check bin/scope.js",
+    "test": "node --test",
+    "test:cli": "node bin/scope.js doctor --json",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "pack:check": "npm pack --dry-run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "prettier": "^3.9.9"
+  }
+}
