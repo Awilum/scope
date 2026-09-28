@@ -1,6 +1,6 @@
 {
   "name": "@awilum/scope",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A minimal dependency-free CLI for exploring projects and building structured project context.",
   "license": "MIT",
   "author": {
